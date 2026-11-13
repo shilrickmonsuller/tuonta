@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F6F7F9">
+<title>TUONTA</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="TUONTA">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div id="app">
+  <header id="topbar"></header>
+  <div id="banner"></div>
+  <main id="view" tabindex="-1"></main>
+  <nav id="tabbar" aria-label="Main">
+    <a href="#/notes" data-tab="notes"><span class="ti" data-icon="note"></span>Notes</a>
+    <a href="#/notebooks" data-tab="notebooks"><span class="ti" data-icon="folder"></span>Notebooks</a>
+    <a href="#/review" data-tab="review"><span class="ti" data-icon="cards"></span>Review</a>
+    <a href="#/more" data-tab="more"><span class="ti" data-icon="more"></span>More</a>
+  </nav>
+</div>
+<div id="drawer" aria-hidden="true"><div class="drawer-panel" role="dialog" aria-label="Menu"></div><button class="drawer-scrim" aria-label="Close menu"></button></div>
+<div id="sheets"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="config.js"></script>
+<script src="js/util.js"></script>
+<script src="js/store.js"></script>
+<script src="js/templates.js"></script>
+<script src="js/srs.js"></script>
+<script src="js/sync.js"></script>
+<script src="js/editor.js"></script>
+<script src="js/views.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
